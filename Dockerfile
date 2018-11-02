@@ -31,7 +31,8 @@ RUN R -e "install.packages(c('DT'), repos='http://cran.rstudio.com/')"
 
 COPY / /srv/shiny-server/drug-survey/
 
-EXPOSE 3838
+
+EXPOSE 8080
 
 COPY shiny-server.sh /usr/bin/shiny-server.sh
 
